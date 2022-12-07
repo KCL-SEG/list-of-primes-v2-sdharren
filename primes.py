@@ -12,7 +12,7 @@ def primes(number_of_primes):
             list.append(i)
             if len(list) == number_of_primes:
                 break
-            for j in range(j*j, n + 1, j):
+            for j in range(j*j, 1000 + 1, j):
                 set.add(j)
 
     return list[:number_of_primes]
