@@ -12,7 +12,6 @@ def primes(number_of_primes):
             list.append(i)
             if len(list) == number_of_primes:
                 break
-            for j in range(i*i, 1000 + 1, i):
-                set.update(j)
+            not_prime.update(j for j in range(i*i, 1001, i))
 
     return list[:number_of_primes]
